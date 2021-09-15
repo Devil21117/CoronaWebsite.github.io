@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up To Access Features</title>
+    <link rel="stylesheet" href="css/signup.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Satisfy&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="formBx">
+            <div class="btn-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn font2" onclick="login()">Log In</button>
+
+                <button type="button" class="toggle-btn font2" onclick="signup()">Sign Up</button>
+            </div>
+
+            <div class="socialIcons">
+                <img src="imgSignup/fb.png" alt="">
+                <img src="imgSignup/tw.png" alt="">
+                <img src="imgSignup/gp.png" alt="">
+            </div>
+
+            <form id="login" class="inputGroup">
+                <input type="text" class="inputField font1" placeholder="User Id" required>
+
+                <input type="text" class="inputField font1" placeholder="Enter Password" required>
+
+                <input type="checkbox" class="checkBox">
+                <span class="font2">Remember Password</span>
+
+                <button type="submit" class="submit-Btn ">Login</button>
+            </form>
+
+            <form id="signup" class="inputGroup">
+                <input type="text" class="inputField font1" placeholder="User Id" required>
+                <input type="email" class="inputField font1" placeholder="Email Id" required>
+
+                <input type="text" class="inputField font1" placeholder="Enter Password" required>
+
+                <input type="checkbox" class="checkBox">
+                <span class="font2">I Agree To The Terms & Condition</span>
+
+                <button type="submit" class="submit-Btn ">Sign Up</button>
+            </form>
+
+        </div>
+
+        <div class="bubble">
+            <img src="img/bubble.png" alt="">
+            <img src="img/bubble.png" alt="">
+            <img src="img/bubble.png" alt="">
+            <img src="img/bubble.png" alt="">
+            <img src="img/bubble.png" alt="">
+            <img src="img/bubble.png" alt="">
+            <img src="img/bubble.png" alt="">
+            <img src="img/bubble.png" alt="">
+            <img src="img/bubble.png" alt="">
+            <img src="img/bubble.png" alt="">
+        </div>
+
+
+
+    </div>
+
+    <script>
+
+        let x = document.getElementById("login");
+        let y = document.getElementById("signup");
+        let z = document.getElementById("btn");
+
+        function signup(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+    </script>
+
+</body>
+
+</html>
